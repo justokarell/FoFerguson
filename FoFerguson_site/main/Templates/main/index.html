@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CSV to HTML Table</title>
+    <title>FoFergusonBookstore</title>
     <meta name="author" content="Derek Eder">
     <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
 
@@ -18,15 +18,60 @@
       <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+ 
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link href="{% static 'tinymce/css/prism.css' %}" rel='stylesheet'>
+ 
   </head>
+
+  <style>
+
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .homepage-header {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 40pt;
+      margin-left: 13pc;
+      color: green;
+    }
+    .homepage-header > a {
+      color: green;
+    }
+    .subheader {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 12pt;
+      margin-left: -15pc;
+      text-align-last: center;
+    }
+
+    .container-fluid > h4 {
+      font-size: 25pt;
+      color: green;
+      margin-left: 15pc;
+    }
+
+  </style>
 
   <body>
 
+    <ul class="homepage-header">
+      <h1 class="homepage-header"><a href="home.html">The Friends Bookshop </a></h1>
+      <p class="subheader"> The used bookshop of the Ferguson Library in Stamford, CT<p>
+    </ul>
+    <br>
     <!-- Page Content -->
     <div class="container">
-      <h1 class="mt-4">Friends of the Ferguson Inventory</h1>
       <div class="container-fluid">
-        <p>Search our inventory below</p>  
+        <h4>Search our inventory below</h4>  
       </div>
       <div id='table-container'></div>
     </div>

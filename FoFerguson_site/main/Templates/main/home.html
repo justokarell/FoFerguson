@@ -16,146 +16,99 @@
 </head>
 
 <style>
-  .Map {
-    float: right;
+
+  .homepage-header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: auto;
-    padding: 40px;
+    color: green;
   }
-  .Donation {
-    float: left;
-    margin: 80px;
-    padding: 20px;
-    width: 500px;
+  .heading > a {
+    color: green;
   }
-  .input-field {
-    margin: 30px;
-    padding: 20px;
-    width: 500px;
+  .subheader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    margin: auto;
+    text-align-last: center;
+    
   }
-  textarea {
-    margin: 15px;
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "." "." "." "." ".";
+    padding: 5%;
   }
-  #map {
-      margin: auto;
-      height: 600px;  /* The height is 400 pixels */
-      width: 600px;  /* The width is the width of the web page */
-     }
-  </style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". .";
+  }
+  .heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30pt;
+    margin: auto;
+    color: green;
+  }
+  .content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15pt;
+    color: darkslategray;
+  }
+
+  
+</style>
+
+<div class="main-container">
+  <div class="homepage-header">
+    <h1 class="homepage-header"> The Friends Bookshop </h1>
+    <p class="subheader"> The used bookshop of the Ferguson Library in Stamford, CT<p>
+  </div>
+  <div class="grid-container">
+    <div class="heading">
+      <h3 class="heading"><a href="about.html">ABOUT</a></h3>
+    </div>
+    <div class="content">
+      <p>We are the used bookstore of the Ferguson Library of Stamford, CT. As a result, we are, physically and financially, part of the library itself. All proceeds go to the staff and programs of the Ferguson Library. </p>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="heading">
+      <h3 class="heading"><a href="index.html">INVENTORY</a></h3>
+    </div>
+    <div class="content">
+      <p>Search our inventory for books in our 'Main' branch, which is attached to the Ferguson Library in Downtown Stamford.</p>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="heading">
+      <h3 class="heading"><a href="#"> SPECIALS</a></h3>
+    </div>
+    <div class="content">
+      <p>Our books usually cost between $2-$5. However, sometimes they are as low as $0.50. Check out our current sales, deals, and promotions here.</p>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="heading">
+      <h3 class="heading"><a href="contact.html">CONTACT</a></h3>
+    </div>
+    <div class="content">
+      <p>Here is where you can find our contact information including our locations nnd holiday hours.</p>
+    </div>
+  </div>
+</div>
 
 
 <body>
 
-<!-- NAVBAR -->
-<section>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">Salhateswaste</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="About.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-</section>
-
-<!-- MAP -->
-<section class="Map">
-  <h3 class="center-align">My Google Maps Demo</h3>
-      <!--The div element for the map -->
-  <div id="map"></div>
-</section>
-
-
-<!-- DONATION INFORMATION -->
-<section class="Donation">
-<form>
-    <h4 class="center-align">Enter Donation Info</h4>
-    <br></br>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-            <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Disabled</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            This is an inline input field:
-            <div class="input-field inline">
-              <input id="email_inline" type="email" class="validate">
-              <label for="email_inline">Email</label>
-              <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s13">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Textarea</label>
-          </div>
-        </div>
-      </form>
-    </div>
-  </form>
- </section>
-
-
-
-
-
-
-<br></br><br></br>
 
 </body> 
 
 <script src="{% static 'tinymce/js/prism.js' %}"></script>
 <script>
-
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-</script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
 </script>
 
 
