@@ -23,10 +23,13 @@
     color: black;
   }
   .homepage-header > h1 {
+    font-size: 60pt;
     background-color: green;
     border: 5pt double yellow;
-    padding: 1pc;
-    animation: example 10s infinite
+    animation: example 10s infinite;
+    text-align: center;
+    margin-bottom: 1pc;
+
   }
   @keyframes example {
     from {background-color: yellow;}
@@ -37,7 +40,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 14pt;
     margin: auto;
-    text-align-last: center;
+    text-align: center;
+    margin-bottom: 3pc;
+    color: green;
     
   }
   .main-container {
@@ -55,18 +60,24 @@
     gap: 1px 1px;
     grid-template-areas: ". .";
   }
+  
   .heading {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30pt;
-    margin: auto;
+    font-size: 33pt;
+    text-align: center;
     color: green;
   }
   .heading > a {
     color: green;
   }
+  .heading > a:hover {
+    background-color: yellow;
+  }
   .content {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15pt;
+    font-size: 16pt;
+    padding-left: 15pt;
+    border-left: 4pt solid white;
     color: darkslategray;
   }
 
@@ -79,7 +90,7 @@
     <p class="subheader"> The used bookshop of the Ferguson Library in Stamford, CT<p>
   </div>
   <div class="grid-container">
-    <div class="heading">
+    <div class="heading-container">
       <h3 class="heading"><a href="about.html">ABOUT</a></h3>
     </div>
     <div class="content">
@@ -87,7 +98,7 @@
     </div>
   </div>
   <div class="grid-container">
-    <div class="heading">
+    <div class="heading-container">
       <h3 class="heading"><a href="index.html">INVENTORY</a></h3>
     </div>
     <div class="content">
@@ -95,7 +106,7 @@
     </div>
   </div>
   <div class="grid-container">
-    <div class="heading">
+    <div class="heading-container">
       <h3 class="heading"><a href="#"> SPECIALS</a></h3>
     </div>
     <div class="content">
@@ -103,7 +114,7 @@
     </div>
   </div>
   <div class="grid-container">
-    <div class="heading">
+    <div class="heading-container">
       <h3 class="heading"><a href="contact.html">CONTACT</a></h3>
     </div>
     <div class="content">
