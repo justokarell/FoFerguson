@@ -65,14 +65,29 @@
         margin-right: 25pc;
         color: darkslategray;
         }
-
+    .navbar-item {
+        font-size: 16pt;
+    }
+    .navbar-item > a {
+        color: green;
+    }
+    .navbar-item > a:hover {
+        background-color: yellow;
+    }
 </style>
 
 <body>
     <div class="grid-container">
         <ul class="homepage-header">
             <h1 class="homepage-header"><a href="home.html">The Friends Bookshop </a></h1>
-            <p class="subheader"> The used bookshop of the Ferguson Library in Stamford, CT<p>
+            <div class="navbar">
+                <p class="navbar-item">
+                    <a href="about.html">  ABOUT  |</a>
+                    <a href="index.html">  INVENTORY  |</a>
+                    <a href="specials.html">  SPECIALS  |</a>
+                    <a href="contact.html">  CONTACT  </a>
+                </p>
+            </div>
         </ul>
         <div class="main-content">
             <div class="heading">
